@@ -1,0 +1,30 @@
+﻿<Window x:Class="MQTTDataProvider.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MQTTDataProvider"
+        mc:Ignorable="d"
+        Title="MQTTDataProvider" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="45*"/>
+            <ColumnDefinition Width="680*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtTopicSubscribe" HorizontalAlignment="Left" Height="44" Margin="127.034,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Grid.Column="2">
+        </TextBox>
+        <Label Content="Topic subscribe" HorizontalAlignment="Left" Margin="10.034,41,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Button x:Name="BtnSubscribe" Content="Subscribe" HorizontalAlignment="Left" Margin="363.034,41,0,0" VerticalAlignment="Top" Width="75" Click="BtnSubscribe_Click" Grid.Column="2"/>
+        <TextBox x:Name="txtReceived" HorizontalAlignment="Left" Height="44" Margin="127.034,122,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Grid.Column="2"/>
+        <TextBox x:Name="txtTopicPublish" HorizontalAlignment="Left" Height="44" Margin="127.034,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Grid.Column="2"/>
+        <TextBox x:Name="txtPublish" HorizontalAlignment="Left" Height="44" Margin="127.034,271,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="220" Grid.Column="2"/>
+        <Label Content="Text received" HorizontalAlignment="Left" Margin="10.034,122,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label Content="Topic publish" HorizontalAlignment="Left" Margin="10.034,195,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Label Content="Text published" HorizontalAlignment="Left" Margin="10.034,271,0,0" VerticalAlignment="Top" Grid.Column="2"/>
+        <Button x:Name="BtnPublish" Content="Publish" HorizontalAlignment="Left" Margin="363.034,195,0,0" VerticalAlignment="Top" Width="75" Click="BtnPublish_Click" Grid.Column="2"/>
+
+    </Grid>
+</Window>
+
+    
